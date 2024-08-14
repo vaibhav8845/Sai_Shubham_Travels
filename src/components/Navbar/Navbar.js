@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg fixed-top">
-        <Link className="navbar-brand ml-4" to="/">BrandName</Link>
+        <Link className="navbar-brand ml-4" to="/">Sai Shubham Tours and Travels</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +29,7 @@ function Navbar() {
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
-          <div className="d-flex justify-content-center mt-2 mt-lg-0 mr-3">
+          <div className="d-flex justify-content-center mt-2 mt-lg-0 ">
             <Link to="/book-now">
               <button className="btn btn-outline-primary" type="button">Book Now</button>
             </Link>

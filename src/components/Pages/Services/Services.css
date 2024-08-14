@@ -1,10 +1,48 @@
 .img1 {
-    background-image: url(./../../../../public//img/car-service.png);
+    background-image: url('./../../../../public/img/car-service.png');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    padding: 20vh 0; /* Responsive padding based on viewport height */
+    position: relative;
+    color: white; /* Text color for visibility */
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    height: 560px;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Centering content vertically */
+    justify-content: center; /* Centering content horizontally */
+    min-height: 95vh; /* Minimum height to ensure content visibility */
     margin-top: 1cm;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .img1 {
+        padding: 15vh 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .img1 {
+        padding: 10vh 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        padding: 8vh 0;
+        min-height: 40vh; /* Adjust minimum height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .img1 {
+        padding: 6vh 0;
+        min-height: 30vh; /* Adjust minimum height for very small screens */
+    }
+
+    .text-about {
+        padding: 15px; /* Adjust padding inside text-about for small screens */
+    }
 }

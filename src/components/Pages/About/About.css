@@ -1,27 +1,111 @@
 .img {
     background-image: url(./../../../../public/img/slider-1.jpg);
-
-
-
-
-
-
-
-
-
     text-align: center;
-
     background-size: cover;
     background-position: center;
     height: 300px;
     width: 100%;
     margin: 0 auto;
 }
-.text-about{
+
+.text-about {
     color: white;
     padding: 130px;
+    text-align: center;
 }
-.About-us{
+
+.About-us {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #fff;
+}
+
+.service-card {
+    background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.service-card:hover {
+    transform: scale(1); /* Zoom in */
+    border: 2px solid greenyellow; /* Change border color to red */
+    background-color: black;
+}
+
+
+.service-card h5 {
+    margin-top: 15px;
+    color: white;
+}
+
+.features {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+.feature-list li::before {
+    content: "✔";
+    color: #ffc107;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .features {
+        padding: 15px;
+    }
+
+    .img {
+        height: 200px;
+    }
+
+    .text-about {
+        padding: 100px 10px;
+    }
+
+    .About-us {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .features,
+    .service-card {
+        font-size: 14px;
+    }
+
+    /* Reduce icon size */
+    .service-icon {
+        font-size: 30px;
+    }
+
+    .img {
+        height: 150px;
+    }
+
+    .text-about {
+        padding: 80px 5px;
+    }
 }

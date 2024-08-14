@@ -6,7 +6,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg fixed-top">
         <Link className="navbar-brand ml-4" to="/">BrandName</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -30,7 +30,9 @@ function Navbar() {
             </li>
           </ul>
           <div className="d-flex justify-content-center mt-2 mt-lg-0 mr-3">
-            <button className="btn btn-outline-primary" type="button">Book Now</button>
+            <Link to="/book-now">
+              <button className="btn btn-outline-primary" type="button">Book Now</button>
+            </Link>
           </div>
         </div>
       </nav>

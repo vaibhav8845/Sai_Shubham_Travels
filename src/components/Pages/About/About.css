@@ -1,0 +1,27 @@
+.img {
+    background-image: url(./../../../../public/img/slider-1.jpg);
+
+
+
+
+
+
+
+
+
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.text-about{
+    color: white;
+    padding: 130px;
+}
+.About-us{
+    display: flex;
+    justify-content: center;
+}

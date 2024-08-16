@@ -3,38 +3,43 @@ import './Footer.css'
 function Footer() {
   return (
 <>
-
-<footer className="footer text-light pt-5 pb-3">
+<footer className="footer text-light  ">
+            <div className="branding-section text-center py-3 ">
+                <h5 className='font-footer-company-n'><b>Sai Shubham</b><span className="text-primary"><b> Tours & Travel</b></span></h5>
+            </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3">
-                        <h5 className="mb-3"><b>Sai Shubham</b><span className="text-primary"><b>Tours & Travel</b></span></h5>
-                    </div>
-                    <div className="col-md-3">
-                        <h5 className="mb-3"><b>Company</b></h5>
+                    <div className="col-md-3  mb-4">
+                        <h5><b>Site Map</b></h5>
                         <ul className="list-unstyled">
-                            <li><a href="#" className="text-light">Home</a></li>
-                            <li><a href="#" className="text-light">About</a></li>
-                            <li><a href="#" className="text-light">Gallery</a></li>
-                            <li><a href="#" className="text-light">Services</a></li>
-                            <li><a href="#" className="text-light">Contact</a></li>
+                            <li><a href="#" className="text-light"><i className="fas fa-home"></i> Home</a></li>
+                            <li><a href="#" className="text-light"><i className="fas fa-folder-open"></i> Portfolio</a></li>
+                            <li><a href="#" className="text-light"><i className="fas fa-lock"></i> Privacy</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3">
-                        <h5 className="mb-3"><b>Contact Us</b></h5>
-                        <p className="mb-1">saishubhamtravel@gmail.com</p>
-                        <p>+91 8010274863</p>
+
+                    <div className="col-md-4 col-sm-12 mb-4">
+                        <h5><b>About Website</b></h5>
+                        <p><b>Sai Shubham Tours & Travel </b>is your gateway to unforgettable journeys and adventures.</p>
+                        <p> We specialize in crafting personalized travel experiences that cater to your unique preferences and desires. </p>
                     </div>
-                    <div className="col-md-3">
-                        <h5 className="mb-3"><b>Quick Link</b></h5>
+
+                    <div className="col-md-4 col-sm-12 mb-4">
+                        <h5><b>Contact</b></h5>
                         <ul className="list-unstyled">
-                            <li><a href="#" className="text-light">Home</a></li>
-                            <li><a href="#" className="text-light">Services </a></li>
-                            <li><a href="#" className="text-light">Contact</a></li>
+                            <li><a href="#" className="text-light"> mailto:saishubhamtravel@gmail.com</a></li>
+                            <li><a href="#" className="text-light"> +91 8010274863</a></li>
+        
                         </ul>
+                    </div>
+                    <div className="col-md-1 col-sm-12 mb-4">
+                    <a href="https://wa.me/8669881059" > <img src='\img\icons8-whatsapp-48.png' className='footer-img-height'></img></a>
+                    <a href="tel:+91 8669881059" ><img src='\img\icons8-call-48.png' className='footer-img-height'></img></a>       
                     </div>
                 </div>
-                <div className="row mt-4">
+            </div>
+
+                <div className="row ">
                     <div className="col text-center">
                         <ul className="list-inline">
                             <li className="list-inline-item">
@@ -50,12 +55,13 @@ function Footer() {
                                 <a href="#" className="text-light"><i className="fab fa-youtube logo-hover-color-y"></i></a>
                             </li>
                         </ul>
-                    
                     </div>
                 </div>
-            </div>
+   
         </footer>
-        
+        <div className="text-center footer-copyright">
+    <small>&copy; 2024 Sai Shubham Tours & Travel. All rights reserved.</small>
+  </div>
 </>
   )
 }

@@ -1,9 +1,17 @@
 import React from 'react';
 import './Home.css';
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
  
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleBookNowClick = () => {
+      navigate('/taxi-booking');
+  };
   const images = [
     '\\img\\image (1).jpg',
     '\\img\\image (1).png',
@@ -22,7 +30,17 @@ function Home() {
     </div>
  
     <div className="offers-container text-center">
-    <h2 className="offers-title">Our Best Offers</h2>
+    <h2 className="offers-title">"Your Cab is Booked! Arrival in 5 Minutes Across Maharashtra" 
+
+    
+
+
+
+</h2>
+<Link to="/book-now">
+              <button className="btn btn-outline-primary " type="button">Book Now</button>
+            </Link>
+
     <div className="row">
       {images.map((image, index) => (
         <div key={index} className="col-md-3 col-sm-6 d-flex justify-content-center">
@@ -135,8 +153,9 @@ function Home() {
     <p className='fuel'><b>Fuel:</b> Diesel, 1.3-liter engine.</p>
     <p className='safety'><b>Safety:</b> Airbags, rear parking sensors.</p>
     <p className='member'><b>Member:</b> 4 + 1</p>
-    <button className="btn btn-success mt-4 book-home-btn">Book Now</button>
-  </div>
+    <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>  </div>
 </div>
 
      
@@ -166,8 +185,9 @@ function Home() {
  <p className='fuel'><b >Fuel :</b> Diesel, 1.3-liter engine.</p>
 <p className='safety'><b>Safety : </b>airbags , rear parking sensors.</p>
 <p className='member'><b>Member :</b> 4 + 1 </p>
-<button className="btn btn-success mt-4"> Book Now</button>
-        </div>
+ <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>         </div>
       </div>
  
  
@@ -198,8 +218,9 @@ function Home() {
  <p className='fuel'><b >Fuel :</b> Diesel, 1.3-liter engine.</p>
 <p className='safety'><b>Safety : </b>airbags , rear parking sensors.</p>
 <p className='member'><b>Member :</b> 6 + 1 </p>
-<button className="btn btn-success mt-4"> Book Now</button>
-        </div>
+ <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>         </div>
       </div>
      
       <div className="car-card-container d-flex justify-content-between align-items-center p-3 border rounded container">
@@ -228,8 +249,9 @@ function Home() {
  <p className='fuel'><b >Fuel :</b> Diesel, 1.3-liter engine.</p>
 <p className='safety'><b>Safety : </b>airbags , rear parking sensors.</p>
 <p className='member'><b>Member :</b> 7 + 1 </p>
-<button className="btn btn-success mt-4"> Book Now</button>
-        </div>
+ <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>         </div>
       </div>
      
       <div className="car-card-container d-flex justify-content-between align-items-center p-3 border rounded container">
@@ -258,8 +280,9 @@ function Home() {
  <p className='fuel'><b >Fuel :</b> Diesel, 1.3-liter engine.</p>
 <p className='safety'><b>Safety : </b>airbags , rear parking sensors.</p>
 <p className='member'><b>Member :</b> 6 + 1 </p>
-<button className="btn btn-success mt-4"> Book Now</button>
-        </div>
+ <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>         </div>
       </div>
  
       <div className="car-card-container d-flex justify-content-between align-items-center p-3 border rounded container">
@@ -288,8 +311,9 @@ function Home() {
  <p className='fuel'><b >Fuel :</b> Diesel, 1.3-liter engine.</p>
 <p className='safety'><b>Safety : </b>airbags , rear parking sensors.</p>
 <p className='member'><b>Member :</b> 11 + 1 </p>
-<button className="btn btn-success mt-4"> Book Now</button>
-        </div>
+ <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>         </div>
       </div>
      
       <div className="car-card-container d-flex justify-content-between align-items-center p-3 border rounded container">
@@ -318,8 +342,9 @@ function Home() {
  <p className='fuel'><b >Fuel :</b> Diesel, 1.3-liter engine.</p>
 <p className='safety'><b>Safety : </b>airbags , rear parking sensors.</p>
 <p className='member'><b>Member :</b> 14 + 1 </p>
-<button className="btn btn-success mt-4"> Book Now</button>
-        </div>
+ <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>         </div>
       </div>
  
  
@@ -349,8 +374,9 @@ function Home() {
   <p className='fuel'><b>Fuel:</b> Diesel, 1.3-liter engine.</p>
   <p className='safety'><b>Safety:</b> Airbags, rear parking sensors.</p>
   <p className='member'><b>Member:</b> 70 + 1</p>
-  <button className="btn btn-success mt-4"> Book Now</button>
-  </div>
+   <button className="btn btn-success mt-4 book-home-btn" onClick={handleBookNowClick}>
+            Book Now
+        </button>   </div>
 
       </div>
  

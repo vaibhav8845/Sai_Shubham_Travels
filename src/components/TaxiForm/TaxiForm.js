@@ -1,11 +1,28 @@
 import React, { useState } from 'react';
-import './TaxiForm.css'; // Create this file for additional custom styling
+import './TaxiForm.css'; 
 import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css'; // Import styles
+import 'react-phone-number-input/style.css'; 
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom'; 
+
+const locations = [
+  'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
+  'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose',
+  'Austin', 'Jacksonville', 'San Francisco', 'Columbus', 'Fort Worth',
+  'Indianapolis', 'Charlotte', 'Seattle', 'Denver', 'El Paso',
+  'Detroit', 'Boston', 'Memphis', 'Baltimore', 'Oklahoma City',
+  'Las Vegas', 'Louisville', 'Milwaukee', 'Albuquerque', 'Tucson',
+];
 
 function TaxiForm() {
+  
+  const navigate = useNavigate();
+
+  const handleBookNowClick = () => {
+      navigate('/home');
+  };
+
   const [formData, setFormData] = useState({
     customerName: '',
     pickupLocation: '',
@@ -19,9 +36,30 @@ function TaxiForm() {
   });
 
   const [errors, setErrors] = useState({});
+  const [filteredLocations, setFilteredLocations] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
+    if (e.target.id === 'pickupLocation') {
+      const query = e.target.value.toLowerCase();
+      if (query) {
+        const suggestions = locations.filter(location =>
+          location.toLowerCase().includes(query)
+        );
+        setFilteredLocations(suggestions);
+        setShowSuggestions(true);
+      } else {
+        setFilteredLocations([]);
+        setShowSuggestions(false);
+      }
+    }
+  };
+
+  const handleLocationSelect = (location) => {
+    setFormData({ ...formData, pickupLocation: location });
+    setFilteredLocations([]);
+    setShowSuggestions(false);
   };
 
   const handlePhoneChange = (value) => {
@@ -109,6 +147,13 @@ function TaxiForm() {
     <div className="taxi-main">
       <ToastContainer />
       <div className="container form-size my-5">
+        <img 
+          src='/img/icons8-back-48.png' 
+          alt="Back" 
+          onClick={handleBookNowClick} 
+          style={{ cursor: 'pointer', marginBottom: '20px' }}
+        />
+
         <h2 className="text-center mb-4">Quick Book Here</h2>
         <form className="p-4 shadow rounded form-container" onSubmit={handleSubmit}>
           <div className="form-row mb-3">
@@ -135,8 +180,18 @@ function TaxiForm() {
                 placeholder="Enter pickup location"
                 value={formData.pickupLocation}
                 onChange={handleChange}
+                autoComplete="off"
               />
               {errors.pickupLocation && <div className="invalid-feedback">{errors.pickupLocation}</div>}
+              {showSuggestions && (
+                <ul className="suggestions-list">
+                  {filteredLocations.map((location, index) => (
+                    <li key={index} onClick={() => handleLocationSelect(location)}>
+                      {location}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
             <div className="col-12 col-md-6">
               <label htmlFor="dropPoint">Drop Point</label>
@@ -232,7 +287,7 @@ function TaxiForm() {
             </div>
           </div>
           <div className="text-center">
-            <button type="submit" className="btn btn-primary mt-3">Book Now</button>
+            <button type="submit" className="btn btn-primary mt-3">Submit</button>
           </div>
         </form>
       </div>

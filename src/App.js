@@ -28,6 +28,9 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book-now" element={<TaxiForm />} />
+        <Route path="/taxi-booking" element={<TaxiForm />} />
+        <Route path="/home" element={<Home />} />
+
       </Routes>
       <Footer />
     </Router>

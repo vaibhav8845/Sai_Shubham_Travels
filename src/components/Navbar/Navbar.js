@@ -30,11 +30,11 @@ function Navbar() {
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
-          <div className="d-flex justify-content-center mt-2 mt-lg-1 ">
+          <div className="d-flex justify-content-center mt-2 mt-lg-1 mr-2 ">
           <ThemeToggle/>
 
             <Link to="/book-now">
-              <button className="btn btn-outline-primary mr-5" type="button">Book Now</button>
+              <button className="btn btn-outline-primary mr-3 ml-3" type="button">Book Now</button>
             </Link>
 
 

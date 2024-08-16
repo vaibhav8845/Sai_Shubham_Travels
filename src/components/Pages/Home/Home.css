@@ -192,11 +192,7 @@ body {
     color: #3b3fdf; /* Blue color for 'Our Best' */
     font-weight: bold;
   }
-  
-  .offers-title::after {
-    content: ' Offers';
-    color: #ff4a4a; /* Red color for 'Offers' */
-  }
+
   
   .offers-image {
     margin-top: 20px;

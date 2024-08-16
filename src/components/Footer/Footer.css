@@ -1,0 +1,43 @@
+.footer {
+    background-color: #3d3d3d; /* Custom background color */
+}
+
+.footer h5 {
+    color: #ffffff; /* Header text color */
+}
+
+.footer a {
+    color: #aaaaaa; /* Link color */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff; /* Link hover color */
+}
+
+.footer .list-inline-item a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+}
+
+.footer .text-primary {
+    color: #007bff !important; /* Adjust this to match the blue in the logo */
+}
+.logo-hover-color-f:hover{
+color: #007bff;
+}
+.logo-hover-color-t:hover{
+    color: #007bff;
+    }
+    .logo-hover-color-i:hover{
+        color: #ff0000;
+        }
+        .logo-hover-color-y:hover{
+          color: #ff0000;
+            }
+           

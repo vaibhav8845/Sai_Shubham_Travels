@@ -7,6 +7,7 @@ import Gallery from './components/Pages/Gallery/Gallery';
 import Services from './components/Pages/Services/Services';
 import Contact from './components/Pages/Contact/Contact';
 import TaxiForm from './components/TaxiForm/TaxiForm';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 <Route path="/book-now" element={<TaxiForm/>} /> 
 
       </Routes>
+      <Footer/>
     </Router>
   );
 }

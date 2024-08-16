@@ -12,6 +12,20 @@ body {
     flex-wrap: wrap;
   }
 
+  .button-call-app .btn {
+    height: 40px; /* Adjust the height as needed */
+    width: 150px; /* Adjust the width as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .button-call-app .btn i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+
    
   .car-info {
     background-color: #ff6f61; /* Light Coral color */

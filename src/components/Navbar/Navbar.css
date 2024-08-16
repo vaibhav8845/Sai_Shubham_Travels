@@ -2,21 +2,28 @@
 
 
 
-
 .navbar {
-    background-color: black;
-  }
+  background-color: white;
+  border: 1px solid  gainsboro;
+}
+
   
   .navbar .navbar-brand, 
   .navbar .nav-link, 
   .navbar .navbar-toggler-icon {
-    color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
   }
   
   .navbar .nav-link:hover {
-    color: yellow;
+    color: green;
   }
   
+  .navbar .navbar-brand:hover{
+    color: green;
+
+  }
   .navbar .navbar-toggler {
     border-color: white;
   }
@@ -30,13 +37,38 @@
     font-size: 1.5em;
   }
   
+.btn-outline-primary {
+  color: black;            /* Text color */
+  border: 1px solid black; /* Border color */
+  background-color: transparent; /* Transparent background */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-outline-primary:hover {
+  background-color: black; /* Background color on hover */
+  color: white;            /* Text color on hover */
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    text-align: center;
+    display: block;
+  }
+
+  .navbar .nav-link {
+    margin: 0;
+  }
+
   .btn-outline-primary {
-    color: white;
-    border-color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-  
-  .btn-outline-primary:hover {
-    background-color: white;
-    color: black;
-  }
+}
+
+
+
+
   

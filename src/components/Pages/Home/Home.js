@@ -36,7 +36,7 @@ function Home() {
       <h2 className="text-center text-primary mb-4">
         WHY CHOOSE <span className="highlight"> SAI SHUBHAM TRAVEL</span>
       </h2>
-      <p className="text-center text-muted mb-5">
+      <p className="text-center looking mb-5">
         Looking for cab services anywhere in Maharashtra? Then Shree Sai Cab is the right place for you.
       </p>
       <div className="row">
@@ -118,9 +118,14 @@ function Home() {
     <p><b>₹ 600</b></p>    
     <b>24 * 7 Available</b>  
     <div className="button-call-app d-flex justify-content-center">
-      <button className="btn btn-primary mr-2">Call Now</button>
-      <button className="btn btn-success ml-2">Whatsapp</button>
-    </div>
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
+
   </div>
   <div className="car-i-cars col-lg-4 col-md-6 text-center">
     <img src="https://imgd.aeplcdn.com/1280x720/cw/cars/maruti-suzuki/swift-dzire.jpg?q=80" alt="Swift Dezire" />
@@ -144,10 +149,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://images.91wheels.com/assets/b_images/main/models/profile/profile1702446523.jpg?width=420&q=60?w=420&q=60" alt="Swift Dezire" />
@@ -172,10 +181,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://m.media-amazon.com/images/I/71Oe3oQEa3L._SX569_.jpg" alt="Swift Dezire" />
@@ -198,10 +211,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://cdni.autocarindia.com/Utils/ImageResizerV2.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Maruti-Suzuki-Ertiga-050720221533.jpg&w=872&h=578&q=75&c=1" alt="Swift Dezire" />
@@ -224,10 +241,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://i.pinimg.com/736x/1d/ca/a1/1dcaa112feb096ccb2bade4f2385e8f7.jpg" alt="Swift Dezire" />
@@ -250,10 +271,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://imgd.aeplcdn.com/1056x594/n/qok3e0b_1625353.jpeg?q=80" alt="Swift Dezire" />
@@ -276,10 +301,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://carhirepune.in/wp-content/uploads/2021/01/TEMPO-TRAVELLER-ON-RENT-IN-PUNE.jpg" alt="Swift Dezire" />
@@ -303,10 +332,14 @@ function Home() {
  
   <b> 24 * 7 Aviable </b>  
    
-          <div className="button-call-app d-flex">
-            <button className="btn btn-primary mr-2">Call Now</button>
-            <button className="btn btn-success ml-2">Whatsapp</button>
-          </div>
+            <div className="button-call-app d-flex justify-content-center">
+  <a href="tel:+91 8669881059" className="btn btn-primary mr-2">
+    <i className="fas fa-phone-alt"></i> Call Now
+  </a>
+  <a href="https://wa.me/8669881059" className="btn btn-success ml-2">
+    <i className="fab fa-whatsapp"></i> Whatsapp
+  </a>
+</div>
         </div>
         <div className="car-i-cars col-lg-4 col-md-6 text-center">
           <img src="https://png.pngtree.com/thumb_back/fh260/background/20230715/pngtree-d-render-of-a-white-coach-tour-bus-dominating-over-a-image_3844061.jpg" alt="Swift Dezire" />

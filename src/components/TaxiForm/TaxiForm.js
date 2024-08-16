@@ -112,7 +112,7 @@ function TaxiForm() {
         <h2 className="text-center mb-4">Quick Book Here</h2>
         <form className="p-4 shadow rounded form-container" onSubmit={handleSubmit}>
           <div className="form-row mb-3">
-            <div className="col">
+            <div className="col-12">
               <label htmlFor="customerName">Customer Name</label>
               <input
                 type="text"
@@ -126,7 +126,7 @@ function TaxiForm() {
             </div>
           </div>
           <div className="form-row mb-3">
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="pickupLocation">Pickup Location</label>
               <input
                 type="text"
@@ -138,7 +138,7 @@ function TaxiForm() {
               />
               {errors.pickupLocation && <div className="invalid-feedback">{errors.pickupLocation}</div>}
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="dropPoint">Drop Point</label>
               <input
                 type="text"
@@ -152,7 +152,7 @@ function TaxiForm() {
             </div>
           </div>
           <div className="form-row mb-3">
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="date">Date</label>
               <input
                 type="date"
@@ -163,7 +163,7 @@ function TaxiForm() {
               />
               {errors.date && <div className="invalid-feedback">{errors.date}</div>}
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="time">Time</label>
               <input
                 type="time"
@@ -176,7 +176,7 @@ function TaxiForm() {
             </div>
           </div>
           <div className="form-row mb-3">
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="vehicleType">Vehicle Type</label>
               <select
                 className={`form-control ${errors.vehicleType ? 'is-invalid' : ''}`}
@@ -192,7 +192,7 @@ function TaxiForm() {
               </select>
               {errors.vehicleType && <div className="invalid-feedback">{errors.vehicleType}</div>}
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="numberOfPassengers">Number of Passengers</label>
               <input
                 type="number"
@@ -206,7 +206,7 @@ function TaxiForm() {
             </div>
           </div>
           <div className="form-row mb-3">
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="contactNumber">Contact Number</label>
               <PhoneInput
                 international
@@ -218,7 +218,7 @@ function TaxiForm() {
               />
               {errors.contactNumber && <div className="invalid-feedback">{errors.contactNumber}</div>}
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6">
               <label htmlFor="emailAddress">Email Address</label>
               <input
                 type="email"

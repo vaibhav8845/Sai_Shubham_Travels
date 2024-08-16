@@ -2,6 +2,7 @@
 .contact-container {
     padding: 10px;
     margin-top: 2cm;
+    
 }
 
 .contact-row {
@@ -50,6 +51,7 @@
 }
 .details {
     flex: 1;
+    color: black;
 }
 .details strong {
     display: block;

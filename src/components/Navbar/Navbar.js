@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navbar.css";
+import ThemeToggle from '../../ThemeToggle';
 
 function Navbar() {
   return (
@@ -29,10 +30,14 @@ function Navbar() {
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
-          <div className="d-flex justify-content-center mt-2 mt-lg-0 ">
+          <div className="d-flex justify-content-center mt-2 mt-lg-1 ">
+          <ThemeToggle/>
+
             <Link to="/book-now">
-              <button className="btn btn-outline-primary" type="button">Book Now</button>
+              <button className="btn btn-outline-primary mr-5" type="button">Book Now</button>
             </Link>
+
+
           </div>
         </div>
       </nav>

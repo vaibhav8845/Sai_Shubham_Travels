@@ -55,9 +55,10 @@
 }
 
 .features {
-    background-color: #f8f9fa;
+    background-color: black;
     padding: 20px;
     border-radius: 10px;
+    color: white;
 }
 
 .feature-list {

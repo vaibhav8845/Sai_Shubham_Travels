@@ -1,8 +1,8 @@
-import React from 'react';
 import './Home.css';
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
  
 function Home() {
@@ -22,13 +22,34 @@ function Home() {
     '\\img\\image (6).jpg',
     '\\img\\image.jpg',
   ]
+  let images1 = [
+    '\\img\\car-img.jpg', 
+    '\\img\\wp5747011-full-screen-sai-baba-hd-computer-desktop-wallpapers.jpg',
+    '\\img\\car2-img.jpg',
+    '\\img\\shirdi-airport_0_1200.jpg',
+    '\\img\\pexels-137666-747079.jpg'
+  ];
+
+
+
+
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % (images1.length));
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [images1.length]);
   return (
  
     <>
-    <div className='col-first-img'>
-   
+     <div className="carousel-container col-first-img">
+      <img src={images1[currentImageIndex]} alt="carousel" className="carousel-image" />
     </div>
- 
+
     <div className="offers-container text-center">
     <h2 className="offers-title">"Your Cab is Booked! Arrival in 5 Minutes Across Maharashtra" 
 

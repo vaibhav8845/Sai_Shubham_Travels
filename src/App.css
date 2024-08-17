@@ -2,7 +2,7 @@ body{
     background-color: whitesmoke;
 }:root {
     --background-color-light: #fff;
-    --background-color-dark: #333;
+    --background-color-dark: black;
     --text-color-light: #000;
     --text-color-dark: #fff;
 }

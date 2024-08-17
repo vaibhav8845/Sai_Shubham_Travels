@@ -8,34 +8,31 @@ function Footer() {
                 <h5 className='font-footer-company-n'><b>Sai Shubham</b><span className="text-primary"><b> Tours & Travel</b></span></h5>
             </div>
             <div className="container">
-                <div className="row">
+                <div className="row ml-4 pl-4">
                     <div className="col-md-3  mb-4">
-                        <h5><b>Site Map</b></h5>
+                        <h5 className=' mt-2'><b>Site Map</b></h5>
                         <ul className="list-unstyled">
-                            <li><a href="#" className="text-light"><i className="fas fa-home"></i> Home</a></li>
-                            <li><a href="#" className="text-light"><i className="fas fa-folder-open"></i> Portfolio</a></li>
-                            <li><a href="#" className="text-light"><i className="fas fa-lock"></i> Privacy</a></li>
+                            <li><a href="#" className="text-light "><i className="fas fa-home"></i> Home</a></li>
+                            <li><a href="#" className="text-light "><i className="fas fa-folder-open"></i> About</a></li>
+                            <li><a href="#" className="text-light "><i className="fas fa-lock"></i> Contact</a></li>
                         </ul>
                     </div>
 
-                    <div className="col-md-4 col-sm-12 mb-4">
+                    <div className="col-md-4 col-sm-12 mb-4 ">
                         <h5><b>About Website</b></h5>
                         <p><b>Sai Shubham Tours & Travel </b>is your gateway to unforgettable journeys and adventures.</p>
                         <p> We specialize in crafting personalized travel experiences that cater to your unique preferences and desires. </p>
                     </div>
 
-                    <div className="col-md-4 col-sm-12 mb-4">
+                    <div className="col-md-4 col-sm-12 mb-4 ">
                         <h5><b>Contact</b></h5>
                         <ul className="list-unstyled">
-                            <li><a href="#" className="text-light"> mailto:saishubhamtravel@gmail.com</a></li>
-                            <li><a href="#" className="text-light"> +91 8010274863</a></li>
-        
+                            <li><a href="#" className="text-light"><a href="https://wa.me/8669881059" > <img src='\img\email-logo.png' className='footer-img-height'></img></a>   saishubhamtours8994@gmail.com</a></li>
+                            <li><a href="#" className="text-light">   <a href="tel:+91 8669881059" ><img src='\img\icons8-call-48.png' className='footer-img-height'></img></a>        +91 8669881059</a></li>
+                            <li><a href="#" className="text-light"> <a href="https://wa.me/8669881059" > <img src='\img\icons8-whatsapp-48.png' className='footer-img-height'></img></a>   chat with saishubhamtours8994</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-1 col-sm-12 mb-4">
-                    <a href="https://wa.me/8669881059" > <img src='\img\icons8-whatsapp-48.png' className='footer-img-height'></img></a>
-                    <a href="tel:+91 8669881059" ><img src='\img\icons8-call-48.png' className='footer-img-height'></img></a>       
-                    </div>
+                   
                 </div>
             </div>
 

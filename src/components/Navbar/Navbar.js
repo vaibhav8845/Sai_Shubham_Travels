@@ -31,7 +31,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="d-flex justify-content-center mt-2 mt-lg-1 mr-2 ">
-          <ThemeToggle/>
+            <ThemeToggle />
 
             <Link to="/book-now">
               <button className="btn btn-outline-primary mr-3 ml-3" type="button">Book Now</button>

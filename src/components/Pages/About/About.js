@@ -13,9 +13,9 @@ function About() {
         <h4 className='About-us'><b>You can book a car over a call in just 5 minutes.   <a href="tel:+91 8669881059"><button className='btn btn-outline-danger mr-3 ' > <b>Call me now.</b></button></a>
         </b>
 
- 
- </h4>
- 
+
+        </h4>
+
         <h4 className='About-us'>Sai Shubham Tours and Travels</h4>
         <p><b>Sai Shubham Tours and Travels</b>:Savaari's Shirdi taxi service is your one-stop solution for all your transportation needs in Shirdi. We take pride in offering an exceptional travel experience that is both affordable and convenient. With Savaari, you can enjoy the benefits of reliable drivers, comfortable vehicles, and hassle-free booking, making us the preferred choice for cab service in Shirdi. Our dedication to customer satisfaction ensures that your experience with us is not only pleasant but also unforgettable. Savaari is here to give you a seamless and comfortable taxi service in Shirdi, whether you are going for business or pleasure. So sit back, relax, and let us handle the transportation as you enjoy Shirdi's gorgeous city.</p>
       </div>

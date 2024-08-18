@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './TaxiForm.css'; 
+import './TaxiForm.css';
 import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css'; 
+import 'react-phone-number-input/style.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 
 const locations = [
   // Cities
@@ -100,11 +100,11 @@ const locations = [
 
 
 function TaxiForm() {
-  
+
   const navigate = useNavigate();
 
   const handleBookNowClick = () => {
-      navigate('/home');
+    navigate('/home');
   };
 
   const [formData, setFormData] = useState({
@@ -231,10 +231,10 @@ function TaxiForm() {
     <div className="taxi-main">
       <ToastContainer />
       <div className="container form-size my-5">
-        <img 
-          src='/img/icons8-back-48.png' 
-          alt="Back" 
-          onClick={handleBookNowClick} 
+        <img
+          src='/img/icons8-back-48.png'
+          alt="Back"
+          onClick={handleBookNowClick}
           style={{ cursor: 'pointer', marginBottom: '20px' }}
         />
 

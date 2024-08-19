@@ -1,7 +1,13 @@
-import React from 'react'
 import "./Contact.css"
 import TaxiForm from '../../TaxiForm/TaxiForm'
+import React, { useEffect } from 'react';
+
 function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
     return (
         <div class="container contact-container">
             <div className='text-center'>

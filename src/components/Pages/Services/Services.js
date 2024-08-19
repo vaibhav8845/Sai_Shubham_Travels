@@ -1,7 +1,11 @@
-import React from 'react';
 import './Services.css';
+import React, {  useEffect } from 'react';
 
 function Services() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="">
       <div className='img1'>

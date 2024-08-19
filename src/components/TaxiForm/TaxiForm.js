@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import './TaxiForm.css';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 const locations = [
   // Cities
@@ -100,6 +100,9 @@ const locations = [
 
 
 function TaxiForm() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const navigate = useNavigate();
 

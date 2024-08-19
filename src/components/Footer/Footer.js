@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'; // Make sure to create a corresponding CSS file for styling
 
 const Footer = () => {
   return (
-    <div className=" mt-3">
+    <div className="mt-3">
       <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#45526e' }}>
         <div className="container p-4 pb-0">
           <section>
@@ -11,40 +12,43 @@ const Footer = () => {
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Sai Shubham Tours & Travel</h6>
                 <p>
-                Sai Shubham Tours & Travel is your gateway to unforgettable journeys and adventures.
-
-We specialize in crafting personalized travel experiences that cater to your unique preferences and desires.
+                  Sai Shubham Tours & Travel is your gateway to unforgettable journeys and adventures.
+                  We specialize in crafting personalized travel experiences that cater to your unique preferences and desires.
                 </p>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />
 
-              {/* Grid column */}
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p><a className="text-white" href="#">Home</a></p>
-                <p><a className="text-white" href="#">About</a></p>
-                <p><a className="text-white" href="#">Gallery</a></p>
+                <p><Link className="text-white" to="/">Home</Link></p>
+                <p><Link className="text-white" to="/about">About</Link></p>
+                <p><Link className="text-white" to="/gallery">Gallery</Link></p>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />
 
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p><a className="text-white" href="#">Services</a></p>
-                <p><a className="text-white" href="#">Contact</a></p>
-                <p><a className="text-white" href="#">Book Now</a></p>
+                <p><Link className="text-white" to="/services">Services</Link></p>
+                <p><Link className="text-white" to="/contact">Contact</Link></p>
+                <p><Link className="text-white" to="/book-now">Book Now</Link></p>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />
 
               <div className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
-              <ul className="list-unstyled">
-                            <li><a href="#" className="text-light"><a href="https://wa.me/8669881059" > <img src='\img\email-logo.png' className='footer-img-height'></img></a> saishubhamtours8994@gmail.com</a></li>
-                            <li><a href="#" className="text-light">   <a href="tel:+91 8669881059" ><img src='\img\icons8-call-48.png' className='footer-img-height'></img></a> 8669881059</a></li>
-                            <li><a href="#" className="text-light"> <a href="https://wa.me/8669881059" > <img src='\img\icons8-whatsapp-48.png' className='footer-img-height'></img></a> 8669881059</a></li>
-                        </ul>
-              
+                <ul className="list-unstyled">
+                  <li><a href="mailto:saishubhamtours8994@gmail.com" className="text-light">
+                    <img src='https://i.postimg.cc/YjcQswkr/email-logo.webp' className='footer-img-height' alt="Email" /> saishubhamtours8994@gmail.com
+                  </a></li>
+                  <li><a href="tel:+918669881059" className="text-light">
+                    <img src='https://i.postimg.cc/jqB9bwS5/icons8-call-48.png' className='footer-img-height' alt="Call" /> 8669881059
+                  </a></li>
+                  <li><a href="https://wa.me/8669881059" className="text-light">
+                    <img src='https://i.postimg.cc/65RP5W8h/icons8-whatsapp-48.png' className='footer-img-height' alt="WhatsApp" /> 8669881059
+                  </a></li>
+                </ul>
               </div>
             </div>
           </section>

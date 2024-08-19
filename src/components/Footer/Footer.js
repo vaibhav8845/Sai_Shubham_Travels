@@ -1,66 +1,76 @@
-import React from 'react'
-import './Footer.css'
-function Footer() {
+import React from 'react';
+import './Footer.css'; // Make sure to create a corresponding CSS file for styling
+
+const Footer = () => {
   return (
-<>
-<footer className="footer text-light  ">
-            <div className="branding-section text-center py-3 ">
-                <h5 className='font-footer-company-n'><b>Sai Shubham</b><span className="text-primary"><b> Tours & Travel</b></span></h5>
+    <div className=" mt-3">
+      <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#45526e' }}>
+        <div className="container p-4 pb-0">
+          <section>
+            <div className="row">
+              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold">Sai Shubham Tours & Travel</h6>
+                <p>
+                Sai Shubham Tours & Travel is your gateway to unforgettable journeys and adventures.
+
+We specialize in crafting personalized travel experiences that cater to your unique preferences and desires.
+                </p>
+              </div>
+
+              <hr className="w-100 clearfix d-md-none" />
+
+              {/* Grid column */}
+              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p><a className="text-white" href="#">Home</a></p>
+                <p><a className="text-white" href="#">About</a></p>
+                <p><a className="text-white" href="#">Gallery</a></p>
+              </div>
+
+              <hr className="w-100 clearfix d-md-none" />
+
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p><a className="text-white" href="#">Services</a></p>
+                <p><a className="text-white" href="#">Contact</a></p>
+                <p><a className="text-white" href="#">Book Now</a></p>
+              </div>
+
+              <hr className="w-100 clearfix d-md-none" />
+
+              <div className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+              <ul className="list-unstyled">
+                            <li><a href="#" className="text-light"><a href="https://wa.me/8669881059" > <img src='\img\email-logo.png' className='footer-img-height'></img></a> saishubhamtours8994@gmail.com</a></li>
+                            <li><a href="#" className="text-light">   <a href="tel:+91 8669881059" ><img src='\img\icons8-call-48.png' className='footer-img-height'></img></a> 8669881059</a></li>
+                            <li><a href="#" className="text-light"> <a href="https://wa.me/8669881059" > <img src='\img\icons8-whatsapp-48.png' className='footer-img-height'></img></a> 8669881059</a></li>
+                        </ul>
+              
+              </div>
             </div>
-            <div className="container">
-                <div className="row ml-4 pl-4">
-                    <div className="col-md-3  mb-4">
-                        <h5 className=' mt-2'><b>Site Map</b></h5>
-                        <ul className="list-unstyled">
-                            <li><a href="#" className="text-light "><i className="fas fa-home"></i> Home</a></li>
-                            <li><a href="#" className="text-light "><i className="fas fa-folder-open"></i> About</a></li>
-                            <li><a href="#" className="text-light "><i className="fas fa-lock"></i> Contact</a></li>
-                        </ul>
-                    </div>
+          </section>
 
-                    <div className="col-md-4 col-sm-12 mb-4 ">
-                        <h5><b>About Website</b></h5>
-                        <p><b>Sai Shubham Tours & Travel </b>is your gateway to unforgettable journeys and adventures.</p>
-                        <p> We specialize in crafting personalized travel experiences that cater to your unique preferences and desires. </p>
-                    </div>
+          <hr className="my-3" />
 
-                    <div className="col-md-4 col-sm-12 mb-4 ">
-                        <h5><b>Contact</b></h5>
-                        <ul className="list-unstyled">
-                            <li><a href="#" className="text-light"><a href="https://wa.me/8669881059" > <img src='\img\email-logo.png' className='footer-img-height'></img></a>   saishubhamtours8994@gmail.com</a></li>
-                            <li><a href="#" className="text-light">   <a href="tel:+91 8669881059" ><img src='\img\icons8-call-48.png' className='footer-img-height'></img></a>        +91 8669881059</a></li>
-                            <li><a href="#" className="text-light"> <a href="https://wa.me/8669881059" > <img src='\img\icons8-whatsapp-48.png' className='footer-img-height'></img></a>   chat with saishubhamtours8994</a></li>
-                        </ul>
-                    </div>
-                   
+          <section className="p-3 pt-0">
+            <div className="row d-flex align-items-center">
+              <div className="col-md-7 col-lg-8 text-center text-md-start">
+                <div className="p-3">
+                  © 2024 Sai Shubham Tours & Travel
                 </div>
+              </div>
+
+              <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-facebook-f"></i></a>
+                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-twitter"></i></a>
+                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-google"></i></a>
+                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-instagram"></i></a>
+              </div>
             </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
-                <div className="row ">
-                    <div className="col text-center">
-                        <ul className="list-inline">
-                            <li className="list-inline-item">
-                                <a href="#" className="text-light"><i className="fab fa-facebook-f logo-hover-color-f"></i></a>
-                            </li>
-                            <li className="list-inline-item">
-                                <a href="#" className="text-light"><i className="fab fa-twitter logo-hover-color-t"></i></a>
-                            </li>
-                            <li className="list-inline-item">
-                                <a href="#" className="text-light"><i className="fab fa-instagram logo-hover-color-i"></i></a>
-                            </li>
-                            <li className="list-inline-item">
-                                <a href="#" className="text-light"><i className="fab fa-youtube logo-hover-color-y"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-   
-        </footer>
-        <div className="text-center footer-copyright">
-    <small>&copy; 2024 Sai Shubham Tours & Travel. All rights reserved.</small>
-  </div>
-</>
-  )
-}
-
-export default Footer
+export default Footer;

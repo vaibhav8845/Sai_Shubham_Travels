@@ -232,7 +232,7 @@ function TaxiForm() {
       <ToastContainer />
       <div className="container form-size my-5">
         <img
-          src='/img/icons8-back-48.png'
+          src='https://i.postimg.cc/G25Fvy5s/icons8-back-48.png'
           alt="Back"
           onClick={handleBookNowClick}
           style={{ cursor: 'pointer', marginBottom: '20px' }}

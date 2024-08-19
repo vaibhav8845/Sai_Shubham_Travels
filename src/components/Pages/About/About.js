@@ -64,7 +64,7 @@ function About() {
             </div>
           </div>
           <div className="col-md-4 text-center">
-            <img src="\img\shirdi-sai-baba.jpg" alt="Saibaba" className="img-fluid rounded" />
+            <img src="https://i.postimg.cc/RZYJsBTj/shirdi-sai-baba.webp" alt="Saibaba" className="img-fluid rounded" />
           </div>
         </div>
       </div>

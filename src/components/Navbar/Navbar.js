@@ -34,7 +34,7 @@ function Navbar() {
             <ThemeToggle />
 
             <Link to="/book-now">
-              <button className="btn btn-outline-primary mr-3 ml-3" type="button">Book Now</button>
+              <button className="btn btn-outline-primary mr-3 ml-5" type="button">Book Now</button>
             </Link>
 
 

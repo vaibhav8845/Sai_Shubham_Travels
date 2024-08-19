@@ -13,21 +13,21 @@ function Home() {
     navigate('/taxi-booking');
   };
   const images = [
-    '\\img\\image (1).jpg',
-    '\\img\\image (1).png',
-    '\\img\\image (2).jpg',
-    '\\img\\image (3).jpg',
-    '\\img\\image (4).jpg',
-    '\\img\\image (5).jpg',
-    '\\img\\image (6).jpg',
-    '\\img\\image.jpg',
+    'https://i.postimg.cc/2jWGnHCk/image.jpg',
+    'https://i.postimg.cc/tgrSm7c9/image-1.jpg',
+    'https://i.postimg.cc/3RdSMYMm/image-1.webp',
+    'https://i.postimg.cc/SR9gsdxK/image-2.jpg',
+    'https://i.postimg.cc/Zqqj3452/image-3.jpg',
+    'https://i.postimg.cc/dVw5s8Pq/image-4.jpg',
+    'https://i.postimg.cc/85JHK4Wb/image-5.jpg',
+    'https://i.postimg.cc/MH1YxG9M/image-6.jpg',
   ]
   let images1 = [
-    '\\img\\car-img.jpg',
-    '\\img\\wp5747011-full-screen-sai-baba-hd-computer-desktop-wallpapers.jpg',
-    '\\img\\car2-img.jpg',
-    '\\img\\shirdi-airport_0_1200.jpg',
-    '\\img\\pexels-137666-747079.jpg'
+    'https://i.postimg.cc/wThWYwrf/car-img.jpg',
+    'https://i.postimg.cc/pTC2SQHp/wp5747011-full-screen-sai-baba-hd-computer-desktop-wallpapers.jpg',
+    'https://i.postimg.cc/3NzZQvjH/car2-img.jpg',
+    'https://i.postimg.cc/sfPSVbVh/shirdi-airport-0-1200.jpg',
+    'https://i.postimg.cc/h43n7tPW/pexels-137666-747079.jpg'
   ];
 
 

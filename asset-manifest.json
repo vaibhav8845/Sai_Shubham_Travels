@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Sai_Shubham_Travels/static/css/main.4e1ed849.css",
-    "main.js": "/Sai_Shubham_Travels/static/js/main.5f24ee21.js",
+    "main.css": "/Sai_Shubham_Travels/static/css/main.790a8d2d.css",
+    "main.js": "/Sai_Shubham_Travels/static/js/main.89f8d0f3.js",
     "static/media/slider-1.jpg": "/Sai_Shubham_Travels/static/media/slider-1.d2bec318eed03a9b10e2.jpg",
     "index.html": "/Sai_Shubham_Travels/index.html",
-    "main.4e1ed849.css.map": "/Sai_Shubham_Travels/static/css/main.4e1ed849.css.map",
-    "main.5f24ee21.js.map": "/Sai_Shubham_Travels/static/js/main.5f24ee21.js.map"
+    "main.790a8d2d.css.map": "/Sai_Shubham_Travels/static/css/main.790a8d2d.css.map",
+    "main.89f8d0f3.js.map": "/Sai_Shubham_Travels/static/js/main.89f8d0f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e1ed849.css",
-    "static/js/main.5f24ee21.js"
+    "static/css/main.790a8d2d.css",
+    "static/js/main.89f8d0f3.js"
   ]
 }

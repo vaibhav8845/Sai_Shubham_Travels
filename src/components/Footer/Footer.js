@@ -1,79 +1,78 @@
+// Footer.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.css'; // Make sure to create a corresponding CSS file for styling
+import MapComponent from '../../MapComponent';
 
 const Footer = () => {
   return (
-    <div className="mt-3">
-      <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#45526e' }}>
-        <div className="container p-4 pb-0">
-          <section>
-            <div className="row">
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Sai Shubham Tours & Travel</h6>
-                <p>
-                  Sai Shubham Tours & Travel is your gateway to unforgettable journeys and adventures.
-                  We specialize in crafting personalized travel experiences that cater to your unique preferences and desires.
-                </p>
-              </div>
+    <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#45526e' }}>
+      <div className="container p-4 pb-0">
+        <section>
+          <div className="row">
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">Sai Shubham Tours & Travel</h6>
+              <p>
+                Sai Shubham Tours & Travel is your gateway to unforgettable journeys and adventures.
+                We specialize in crafting personalized travel experiences that cater to your unique preferences and desires.
+              </p>
+            </div>
 
-              <hr className="w-100 clearfix d-md-none" />
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
 
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p><Link className="text-white" to="/">Home</Link></p>
-                <p><Link className="text-white" to="/about">About</Link></p>
-                <p><Link className="text-white" to="/gallery">Gallery</Link></p>
-              </div>
+            <ul className="list-unstyled">
+                <li>
+                  <a href="mailto:saishubhamtours8994@gmail.com" className="text-light">
+                    <img src='https://i.postimg.cc/YjcQswkr/email-logo.webp' className='footer-img-height' alt="Email" />
+                    saishubhamtours8994@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+918669881059" className="text-light">
+                    <img src='https://i.postimg.cc/jqB9bwS5/icons8-call-48.png' className='footer-img-height' alt="Call" />
+                    8669881059
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/8669881059" className="text-light">
+                    <img src='https://i.postimg.cc/65RP5W8h/icons8-whatsapp-48.png' className='footer-img-height' alt="WhatsApp" />
+                    8669881059
+                  </a>
+                </li>
+              </ul>
 
-              <hr className="w-100 clearfix d-md-none" />
+            </div>
 
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p><Link className="text-white" to="/services">Services</Link></p>
-                <p><Link className="text-white" to="/contact">Contact</Link></p>
-                <p><Link className="text-white" to="/book-now">Book Now</Link></p>
-              </div>
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
 
-              <hr className="w-100 clearfix d-md-none" />
+            <h6 className="text-uppercase mb-4 font-weight-bold">Map</h6>
 
-              <div className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
-                <ul className="list-unstyled">
-                  <li><a href="mailto:saishubhamtours8994@gmail.com" className="text-light">
-                    <img src='https://i.postimg.cc/YjcQswkr/email-logo.webp' className='footer-img-height' alt="Email" /> saishubhamtours8994@gmail.com
-                  </a></li>
-                  <li><a href="tel:+918669881059" className="text-light">
-                    <img src='https://i.postimg.cc/jqB9bwS5/icons8-call-48.png' className='footer-img-height' alt="Call" /> 8669881059
-                  </a></li>
-                  <li><a href="https://wa.me/8669881059" className="text-light">
-                    <img src='https://i.postimg.cc/65RP5W8h/icons8-whatsapp-48.png' className='footer-img-height' alt="WhatsApp" /> 8669881059
-                  </a></li>
-                </ul>
+            <MapComponent />
+
+            </div>
+          </div>
+        </section>
+
+        <hr className="my-3" />
+
+        <section className="p-3 pt-0">
+          <div className="row d-flex align-items-center">
+            <div className="col-md-7 col-lg-8 text-center text-md-start">
+              <div className="p-3">
+                © 2024 Sai Shubham Tours & Travel
               </div>
             </div>
-          </section>
 
-          <hr className="my-3" />
-
-          <section className="p-3 pt-0">
-            <div className="row d-flex align-items-center">
-              <div className="col-md-7 col-lg-8 text-center text-md-start">
-                <div className="p-3">
-                  © 2024 Sai Shubham Tours & Travel
-                </div>
-              </div>
-
-              <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-facebook-f"></i></a>
-                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-twitter"></i></a>
-                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-google"></i></a>
-                <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-instagram"></i></a>
-              </div>
+            <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-facebook-f"></i></a>
+              <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-twitter"></i></a>
+              <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-google"></i></a>
+              <a className="btn btn-outline-light btn-floating m-1" href="#" role="button"><i className="fab fa-instagram"></i></a>
             </div>
-          </section>
-        </div>
-      </footer>
-    </div>
+          </div>
+        </section>
+      </div>
+    </footer>
   );
 };
 

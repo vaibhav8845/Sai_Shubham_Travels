@@ -16,3 +16,11 @@ body {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
 }
+
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  
+  

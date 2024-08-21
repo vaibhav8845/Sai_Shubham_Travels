@@ -63,8 +63,23 @@ function Home() {
 
         </h2>
         <Link to="/book-now">
-          <button className="btn btn-outline-primary " type="button">Book Now</button>
-        </Link>
+              <button
+                type="button"
+                className="btn btn-primary px-4 py-2 mx-2 w-60 rounded shadow-sm"
+                style={{
+                  backgroundColor: "#007bff",
+                  border: "none",
+                  fontSize: "0.9rem",
+                  fontWeight: "bold",
+                  transition: "background-color 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0056b3")}
+                onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#007bff")}
+                aria-pressed="false"
+              >
+                Book Now
+              </button>
+            </Link>
 
         <div className="row">
           {images.map((image, index) => (

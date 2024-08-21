@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 const locations = [
-  // Cities
   'Mumbai', 'Pune', 'Nagpur', 'Thane', 'Nashik',
   'Aurangabad', 'Solapur', 'Kolhapur', 'Sangli', 'Amravati',
   'Akola', 'Nanded', 'Ahmednagar', 'Dhule', 'Jalgaon',
@@ -17,7 +16,6 @@ const locations = [
   'Kalyan-Dombivli', 'Navi Mumbai', 'Kalyan', 'Ulhasnagar',
   'Vasai-Virar', 'Ambernath', 'Badlapur',
 
-  // Talukas
   'Kankavli', 'Vaibhavwadi', 'Malwan', 'Sawantwadi', 'Vengurla',
   'Kudal', 'Dodamarg', 'Devgad', 'Ratnagiri', 'Sangameshwar',
   'Lanja', 'Rajapur', 'Chiplun', 'Guhagar', 'Dapoli',

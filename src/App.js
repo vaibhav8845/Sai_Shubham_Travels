@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import About from './components/Pages/About/About';
@@ -18,6 +18,10 @@ function App() {
     document.body.setAttribute('data-theme', theme);
   }, [theme]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Router>
       <Navbar />
@@ -30,9 +34,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/book-now" element={<TaxiForm />} />
           <Route path="/taxi-booking" element={<TaxiForm />} />
+          <Route path="/home" element={<Home/>}/>
         </Routes>
       </div>
       <Footer />
+      
     </Router>
   );
 }

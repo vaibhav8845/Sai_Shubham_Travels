@@ -186,26 +186,30 @@ function TaxiForm() {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (validateForm()) {
       toast.info("Sending...");
-
+  
       const formDataToSend = new FormData();
       Object.keys(formData).forEach(key => formDataToSend.append(key, formData[key]));
       formDataToSend.append("access_key", "3086c577-5b4f-41b1-a79e-0810fdc7a167");
-
+  
       try {
         const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           body: formDataToSend,
         });
-
+  
         const data = await response.json();
-
+  
         if (data.success) {
-          toast.success("Form Submitted Successfully");
+          toast.dismiss(); 
+          setTimeout(() => {
+            toast.success("Form Submitted Successfully");
+          }, 1000); 
+  
           setFormData({
             customerName: '',
             pickupLocation: '',
@@ -218,15 +222,19 @@ function TaxiForm() {
             emailAddress: '',
           });
         } else {
+          toast.dismiss();
           toast.error(`Error: ${data.message}`);
         }
       } catch (error) {
+        toast.dismiss();
         toast.error("An error occurred. Please try again.");
       }
     } else {
       toast.error("Please fix the errors in the form.");
     }
   };
+  
+  
 
   return (
     <div className="taxi-main">

@@ -335,7 +335,7 @@ function TaxiForm() {
                 <option value="" disabled>Select vehicle type</option>
                 <option value="Sedan">Sedan</option>
                 <option value="SUV">SUV</option>
-                <option value="Hatchback">Hatchback</option>
+                <option value="Bus">Bus</option>
                 <option value="Minivan">Minivan</option>
               </select>
               {errors.vehicleType && <div className="invalid-feedback">{errors.vehicleType}</div>}
